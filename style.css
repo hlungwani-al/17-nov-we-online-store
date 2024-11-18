@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, a {
+    text-decoration: none;
+    list-style: none;
+}
+.links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    float: right;
+    
+}
+
+.products-container {
+    padding: 2rem;
+    margin: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.product {
+    border: 0.1rem solid black;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    width:6.5rem;
+    height: 6.5rem;
+}
+.product:hover {
+    background-color: aquamarine;
+}
+.product:hover::after {
+    content: ", click to add to cart";
+    margin: 0.2rem;
+    background-color: aquamarine;
+}
+input[type=submit]{
+    cursor: pointer;
+}

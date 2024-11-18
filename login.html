@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1 class="headerLogin">Login</h1>
+    <form onsubmit="userLogin(event)">
+        <label for="userLogin">Username: </label>
+        <input type="text" name="userLogin" id="userLogin" required autocomplete="username">
+        <label for="userPassword">Password: </label>
+        <input type="password" name="userPassword" id="userPassword" required>
+        <input type="submit" value="Login">
+    </form>
+    <p class="login">Don't have an account, <a href="./signup.html">Sign up here</a></p>
+</body>
+</html>
